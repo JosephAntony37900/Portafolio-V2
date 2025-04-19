@@ -51,7 +51,7 @@ function efectoHabilidades(){
 }
 
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
+//detecto el scrolling para aplicar la animacion de la barra de habilidades u-u
 window.onscroll = function(){
     efectoHabilidades();
-} 
+}
