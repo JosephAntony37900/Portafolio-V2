@@ -46,7 +46,7 @@ html {
   transition: 0.5s;
   text-decoration: none;
 }
-.contenedor-header head nav ul li a:hover {
+.contenedor-header header nav ul li a:hover {
   color: #1cb698;
 }
 .nav-responsive {
@@ -206,7 +206,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: purple;
+  background-color: #1cb698;
   z-index: -1;
   transition: 1s;
 }
@@ -272,126 +272,115 @@ html {
   right: -15px;
   font-size: 14px;
 }
+
+/* Animaciones para skills técnicas */
+.skills .skill .golang {
+  width: 0%;
+  animation: 2s golang forwards;
+}
+@keyframes golang {
+  0% { width: 0%; }
+  100% { width: 90%; }
+}
+
+.skills .skill .python {
+  width: 0%;
+  animation: 2s python forwards;
+}
+@keyframes python {
+  0% { width: 0%; }
+  100% { width: 80%; }
+}
+
 .skills .skill .javascript {
   width: 0%;
   animation: 2s javascript forwards;
 }
 @keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 20%;
-  }
-}
-.skills .skill .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 45%;
-  }
-}
-.skills .skill .cmasmas {
-  width: 0%;
-  animation: 2s cmasmas forwards;
-}
-@keyframes cmasmas {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 45%;
-  }
+  0% { width: 0%; }
+  100% { width: 75%; }
 }
 
-.skills .skill .photoshop {
+.skills .skill .java {
   width: 0%;
-  animation: 2s photoshop forwards;
+  animation: 2s java forwards;
 }
-@keyframes photoshop {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+@keyframes java {
+  0% { width: 0%; }
+  100% { width: 70%; }
 }
-.skills .skill .edit {
+
+.skills .skill .devops {
   width: 0%;
-  animation: 2s edit forwards;
+  animation: 2s devops forwards;
 }
-@keyframes edit {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 55%;
-  }
+@keyframes devops {
+  0% { width: 0%; }
+  100% { width: 75%; }
 }
+
+.skills .skill .hacking {
+  width: 0%;
+  animation: 2s hacking forwards;
+}
+@keyframes hacking {
+  0% { width: 0%; }
+  100% { width: 50%; }
+}
+
+/* Animaciones para soft skills */
 .skills .skill .comunicacion {
   width: 0%;
   animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
+  0% { width: 0%; }
+  100% { width: 85%; }
 }
+
 .skills .skill .trabajo {
   width: 0%;
   animation: 2s trabajo forwards;
 }
 @keyframes trabajo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
+  0% { width: 0%; }
+  100% { width: 90%; }
 }
-.skills .skill .modales {
+
+.skills .skill .liderazgo {
   width: 0%;
-  animation: 2s modales forwards;
+  animation: 2s liderazgo forwards;
 }
-@keyframes modales {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 99%;
-  }
+@keyframes liderazgo {
+  0% { width: 0%; }
+  100% { width: 85%; }
 }
-.skills .skill .creatividad {
+
+.skills .skill .resolucion {
   width: 0%;
-  animation: 2s creatividad forwards;
+  animation: 2s resolucion forwards;
 }
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
+@keyframes resolucion {
+  0% { width: 0%; }
+  100% { width: 90%; }
 }
-.skills .skill .dedicacion {
+
+.skills .skill .aprendizaje {
   width: 0%;
-  animation: 2s dedicacion forwards;
+  animation: 2s aprendizaje forwards;
 }
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
+@keyframes aprendizaje {
+  0% { width: 0%; }
+  100% { width: 95%; }
+}
+
+.skills .skill .adaptabilidad {
+  width: 0%;
+  animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+  0% { width: 0%; }
+  100% { width: 90%; }
 }
 
 /* Seccion curriculum*/
@@ -400,7 +389,7 @@ html {
   color: #fff;
   padding: 50px 20px;
 }
-.curriculum .contenido-section {
+.curriculum .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
@@ -453,7 +442,7 @@ html {
   color: #1cb698;
   margin-bottom: 10px;
 }
-.curriculum .fila .item {
+.curriculum .fila .item p {
   line-height: 24px;
 }
 .curriculum .fila .izq {
@@ -509,7 +498,7 @@ html {
   color: #fff;
   padding: 50px 20px;
 }
-.portfolio .contenido-section {
+.portfolio .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
@@ -550,6 +539,7 @@ html {
   font-size: 18px;
   letter-spacing: 3px;
   opacity: 0;
+  padding: 20px;
 }
 .portfolio .galeria .proyecto .overlay h3 {
   margin-bottom: 20px;
@@ -564,9 +554,6 @@ html {
 
 /* Contacto seccion */
 .contacto {
- /* background-image: url(/img/contacto/mapp.png);*/
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #1e2326;
   color: #fff;
   padding: 50px 0;
@@ -618,7 +605,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: purple;
+  background-color: #1cb698;
   z-index: -1;
   transition: 1s;
 }
@@ -673,6 +660,9 @@ footer .redes a{
   font-size: 20px;
   transition: .3s;
 }
+footer .redes a:hover{
+  background-color: #1cb698;
+}
 footer .arriba{
   display: block;
   width: 50px;
@@ -686,7 +676,9 @@ footer .arriba{
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+  text-decoration: none;
 }
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
   nav{
@@ -716,7 +708,7 @@ footer .arriba{
       display: block;
   }
   .sobremi .fila .col{
-      width: fit-content;
+      width: 100%;
   }
 
   .skills .fila{

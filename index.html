@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>IDS Portafolio</title> //proxima actualización pronto
+    <title>José Antonio - Portafolio</title>
   </head>
   <body>
     <!-- Menu encabezado -->
@@ -24,15 +24,15 @@
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#sobremi">QUIEN SOY</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#curriculum">CURRICULUM</a></li>
-            <li><a href="#portfolio">PORTAFOLIO</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">QUIEN SOY</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -42,16 +42,15 @@
     <section id="inicio" class="inicio">
       <div class="contenido-banner">
         <div class="contenedor-img">
-          <img src="./img/inicio/yo ese.png" alt="soy ese" />
+          <img src="./img/inicio/yo ese.png" alt="José Antonio" />
         </div>
-        <h1>Joseph Antony</h1>
-        <h2>Ingeniero de Sotware - Back-End</h2>
+        <h1>José Antonio</h1>
+        <h2>Ingeniero de Software - Back-End & DevOps</h2>
         <div class="redes">
           <a href="https://www.facebook.com/profile.php?id=100095386909467"><i class="fa-brands fa-square-facebook"></i></a>
           <a href="https://x.com/VixelTorn?t=juc2I8E3DvIEB1c-SQQt9Q&s=08"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="https://github.com/JosephAntony37900"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-pinto-aguilar-b884b92a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-solid fa-rss"></i></a>
         </div>
       </div>
     </section>
@@ -61,9 +60,10 @@
       <div class="contenido-section">
         <h2>Quien soy</h2>
         <p>
-          <span>Hola, Mi nombre es Joseph Antony Pinto Aguilar.</span>
-          Soy ingeniero de software y tengo curiosidad por el mundo de la programación y todo lo demás, 
-          así que me gusta profundizar y aprender de verdad un montón de cosas.
+          <span>Hola, Mi nombre es José Antonio Pinto Aguilar.</span>
+          Soy estudiante de Ingeniería en Software con enfoque en desarrollo back-end, DevOps y seguridad de aplicaciones. 
+          Me apasiona crear soluciones tecnológicas innovadoras, robustas y seguras, con pensamiento analítico y 
+          orientación a resultados. Siempre dispuesto al aprendizaje continuo y a enfrentar nuevos desafíos.
         </p>
 
         <div class="fila">
@@ -76,24 +76,24 @@
                 20-11-2005
               </li>
               <li>
-                <strong>Telefono:</strong>
-                9641173446
+                <strong>Teléfono:</strong>
+                (+52) 964 117 3446
               </li>
               <li>
                 <strong>Email:</strong>
                 JoseAntonioPintoAguilar@gmail.com
               </li>
               <li>
-                <strong>Website:</strong>
-                www.nada por el momento.com
+                <strong>GitHub:</strong>
+                <a href="https://github.com/JosephAntony37900" target="_blank" style="color: #1cb698;">@JosephAntony37900</a>
               </li>
               <li>
-                <strong>Direccion:</strong>
-                Tuxtla Gutierrez,Chiapas,Mx
+                <strong>Dirección:</strong>
+                Tuxtla Gutiérrez, Chiapas, MX
               </li>
               <li>
                 <strong>Universidad:</strong>
-                <span>UPCHIAPAS</span>
+                <span>UPChiapas</span>
               </li>
             </ul>
           </div>
@@ -103,32 +103,32 @@
             <h3>Intereses</h3>
             <div class="contenedor-intereses">
               <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>CÓDIGO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>SEGURIDAD</span>
+              </div>
+              <div class="interes">
                 <i class="fa-solid fa-gamepad"></i>
                 <span>JUEGOS</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-headphones"></i>
-                <span>MUSICA</span>
+                <span>MÚSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-mug-hot"></i>
+                <span>CAFÉ</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-plane"></i>
                 <span>VIAJAR</span>
               </div>
               <div class="interes">
-                <i class="fa-solid fa-mug-hot"></i>
-                <span>CAFE</span>
-              </div>
-              <div class="interes">
                 <i class="fa-solid fa-car"></i>
                 <span>AUTOS</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-camera-retro"></i>
-                <span>FOTOS</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-person-hiking"></i>
-                <span>DEPORTES</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-book"></i>
@@ -137,7 +137,7 @@
             </div>
           </div>
         </div>
-        <button>
+        <button id="btnDescargarCV">
           DESCARGAR CV <i class="fa-solid fa-download"></i>
           <span class="overlay"></span>
         </button>
@@ -153,86 +153,102 @@
           <div class="col">
             <h3>Technical Skills</h3>
             <div class="skill">
-              <span>JavaScript</span>
+              <span>Go & Backend</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>50%</span>
+                <div class="progreso golang">
+                  <span>90%</span>
                 </div>
               </div>
             </div>
             <div class="skill">
-              <span>HTML & CSS</span>
+              <span>Python & FastAPI</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>45%</span>
+                <div class="progreso python">
+                  <span>80%</span>
                 </div>
               </div>
             </div>
             <div class="skill">
-              <span>C++</span>
+              <span>JavaScript & Node.js</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>45%</span>
+                <div class="progreso javascript">
+                  <span>75%</span>
                 </div>
               </div>
             </div>
             <div class="skill">
               <span>Java</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso java">
                   <span>70%</span>
                 </div>
               </div>
             </div>
             <div class="skill">
-              <span>Rust</span>
+              <span>DevOps & AWS</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>20%</span>
+                <div class="progreso devops">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Hacking Ético</span>
+              <div class="barra-skill">
+                <div class="progreso hacking">
+                  <span>50%</span>
                 </div>
               </div>
             </div>
           </div>
           <!--Profesional skills-->
           <div class="col">
-            <h3>Profesional Skills</h3>
+            <h3>Soft Skills</h3>
             <div class="skill">
-              <span>Comunicacion</span>
+              <span>Comunicación</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
+                <div class="progreso comunicacion">
+                  <span>85%</span>
                 </div>
               </div>
             </div>
             <div class="skill">
               <span>Trabajo en equipo</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Modales</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>100%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Creatividad</span>
-              <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso trabajo">
                   <span>90%</span>
                 </div>
               </div>
             </div>
             <div class="skill">
-              <span>Dedicación</span>
+              <span>Liderazgo</span>
               <div class="barra-skill">
-                <div class="progreso">
-                  <span>100%</span>
+                <div class="progreso liderazgo">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Resolución de problemas</span>
+              <div class="barra-skill">
+                <div class="progreso resolucion">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Aprendizaje rápido</span>
+              <div class="barra-skill">
+                <div class="progreso aprendizaje">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Adaptabilidad</span>
+              <div class="barra-skill">
+                <div class="progreso adaptabilidad">
+                  <span>90%</span>
                 </div>
               </div>
             </div>
@@ -242,7 +258,6 @@
     </div>
 
     <!--Seccion curriculum-->
-
     <section id="curriculum" class="curriculum">
       <div class="contenido-seccion">
         <h2>Curriculum</h2>
@@ -250,74 +265,70 @@
           <div class="col izquierda">
             <h3>Educación</h3>
             <div class="item izq">
-              <h4>Arte y Multimedia</h4>
-              <span class="casa">Universidad Politecnica de Chiapas</span>
-              <span class="fecha">2023-2026</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi officia fugit odit non, 
-                illum illo mollitia commodi eum, voluptatem, nesciunt rem eaque? Et cumque nam accusamus ratione praesentium. 
-                Fuga, aperiam.</p>
-                <div class="conectori">
-                  <div class="circuloi"></div>
-                </div>
+              <h4>Ingeniería en Software</h4>
+              <span class="casa">Universidad Politécnica de Chiapas</span>
+              <span class="fecha">2023 - 2026</span>
+              <p>Licenciatura enfocada en desarrollo back-end, DevOps y seguridad de aplicaciones. 
+                Aprendizaje de arquitecturas limpias, patrones de diseño y mejores prácticas de desarrollo.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
             </div>
             <div class="item izq">
-              <h4>Arte y Multimedia</h4>
-              <span class="casa">Universidad Politecnica de Chiapas</span>
-              <span class="fecha">2023-2026</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi officia fugit odit non, 
-                illum illo mollitia commodi eum, voluptatem, nesciunt rem eaque? Et cumque nam accusamus ratione praesentium. 
-                Fuga, aperiam.</p>
-                <div class="conectori">
-                  <div class="circuloi"></div>
-                </div>
-            </div>
-            <div class="item izq">
-              <h4>Arte y Multimedia</h4>
-              <span class="casa">Universidad Politecnica de Chiapas</span>
-              <span class="fecha">2023-2026</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi officia fugit odit non, 
-                illum illo mollitia commodi eum, voluptatem, nesciunt rem eaque? Et cumque nam accusamus ratione praesentium. 
-                Fuga, aperiam.</p>
-                <div class="conectori">
-                  <div class="circuloi"></div>
-                </div>
+              <h4>Ciencias Sociales y Humanidades</h4>
+              <span class="casa">Preparatoria Alberto C. Culebro</span>
+              <span class="fecha">2020 - 2023</span>
+              <p>Formación integral en ciencias sociales y humanidades, desarrollando habilidades de 
+                pensamiento crítico y comunicación efectiva.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
             </div>
           </div>
 
           <div class="col derecha">
             <h3>Experiencia de trabajo</h3>
             <div class="item der">
-              <h4>Back developer</h4>
-              <span class="casa">Joseph777</span>
-              <span class="fecha">2023-2026</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi officia fugit odit non, 
-                illum illo mollitia commodi eum, voluptatem, nesciunt rem eaque? Et cumque nam accusamus ratione praesentium. 
-                Fuga, aperiam.</p>
-                <div class="conectord">
-                  <div class="circulod"></div>
-                </div>
+              <h4>Back-End & DevOps Developer</h4>
+              <span class="casa">Frimeet</span>
+              <span class="fecha">Sep - Nov 2024</span>
+              <p>Desarrollo de plataforma de recomendaciones. Diseño e implementación de bases de datos 
+                relacionales (PostgreSQL) y no relacionales (MongoDB). Creación de APIs REST con JS y Python.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
             </div>
             <div class="item der">
-              <h4>Back developer</h4>
-              <span class="casa">Joseph777</span>
-              <span class="fecha">2023-2026</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi officia fugit odit non, 
-                illum illo mollitia commodi eum, voluptatem, nesciunt rem eaque? Et cumque nam accusamus ratione praesentium. 
-                Fuga, aperiam.</p>
-                <div class="conectord">
-                  <div class="circulod"></div>
-                </div>
+              <h4>Back-End & Blockchain Developer</h4>
+              <span class="casa">Vixel</span>
+              <span class="fecha">Oct 2024 - Ene 2025</span>
+              <p>Desarrollo de plataforma descentralizada en Blockchain Vara. 1er lugar Hackathon Nacional 
+                Chiapas, 2do lugar MegaHackathon for Vara CDMX (Internacional).</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
             </div>
             <div class="item der">
-              <h4>Back developer</h4>
-              <span class="casa">Joseph777</span>
-              <span class="fecha">2023-2026</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi officia fugit odit non, 
-                illum illo mollitia commodi eum, voluptatem, nesciunt rem eaque? Et cumque nam accusamus ratione praesentium. 
-                Fuga, aperiam.</p>
-                <div class="conectord">
-                  <div class="circulod"></div>
-                </div>
+              <h4>Líder de Desarrollo | Back-End | IoT</h4>
+              <span class="casa">GEOVA</span>
+              <span class="fecha">May - Jul 2025</span>
+              <p>Liderazgo en sistema de medición para ingeniería civil. Integración de sensores con 
+                Raspberry Pi y ESP32. Pentesting y aseguramiento de calidad.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Back-End</h4>
+              <span class="casa">VaultDoc-VD</span>
+              <span class="fecha">Agosto - Agosto 2025</span>
+              <p>En la Sociedad Operadora de la Torre Chiapas (Tuxtla Gutiérrez, Chiapas), desarrollé una plataforma para
+              almacenar y gestionar los archivos por departamento.
+              Fui responsable de la capa de seguridad de la API (Go), implementando middlewares para autenticación
+              (JWT), autorización y la correcta separación de roles y departamentos.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -325,7 +336,6 @@
     </section>
 
     <!--Sección Portafolio-->
-
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
         <h2>PORTAFOLIO</h2>
@@ -334,7 +344,8 @@
             <img src="./img/portafolio/vixel.png" alt="vixel">
             <div class="overlay">
               <h3>Vixel</h3>
-              <p>Plataforma de videojuegos, torneos y streaming descentralizado</p>
+              <p>Plataforma descentralizada de juegos, torneos y streaming en Blockchain Vara. 
+                1er lugar Nacional, 2do lugar Internacional.</p>
             </div>
           </div>
           <div class="proyecto">
@@ -359,17 +370,38 @@
             </div>
           </div>
           <div class="proyecto">
-            <img src="./img/portafolio/ouro.jpg" alt="aura">
+            <img src="./img/portafolio/GEOVA.png" alt="GEOVA">
             <div class="overlay">
-              <h3>Proximamente</h3>
-              <p>Diseño creativo</p>
+              <h3>GEOVA</h3>
+              <p>Sistema inteligente de medición y análisis para proyectos de ingeniería civil con IoT.</p>
             </div>
           </div>
           <div class="proyecto">
-            <img src="./img/portafolio/ouro.jpg" alt="aura">
+            <img src="./img/portafolio/VaultDoc.png" alt="VaultDoc">
             <div class="overlay">
-              <h3>Proximamente</h3>
-              <p>Diseño creativo</p>
+              <h3>VaultDoc-VD</h3>
+              <p>Plataforma segura para gestión de archivos gubernamentales con análisis de vulnerabilidades.</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/portafolio/Frimeet.png" alt="Frimeet">
+            <div class="overlay">
+              <h3>Frimeet</h3>
+              <p>Plataforma de recomendaciones con APIs REST y bases de datos relacionales y no relacionales.</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/portafolio/Game2D.jpg" alt="juego">
+            <div class="overlay">
+              <h3>Videojuego 2D Educativo</h3>
+              <p>Juego educativo sobre formación del cuerpo humano para el Museo Chiapas de Ciencia y Tecnología.</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/portafolio/ouro.jpg" alt="más proyectos">
+            <div class="overlay">
+              <h3>Más proyectos</h3>
+              <p>Visita mi GitHub para ver más proyectos y contribuciones.</p>
             </div>
           </div>
         </div>
@@ -377,51 +409,47 @@
     </section>
 
     <!--Seccion Contacto-->
-
     <div id="contacto" class="contacto">
       <div class="contenido-seccion">
         <h2>CONTACTO</h2>
         <div class="fila">
           <!--Formulario-->
           <div class="col">
-            <input type="text" placeholder="Tú Nombre">
-            <input type="text" placeholder="Numero telefonico">
-            <input type="text" placeholder="Tú Email">
-            <input type="text" placeholder="Tema">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-            <button>
+            <input type="text" placeholder="Tú Nombre" id="nombre">
+            <input type="text" placeholder="Número telefónico" id="telefono">
+            <input type="text" placeholder="Tú Email" id="email">
+            <input type="text" placeholder="Tema" id="tema">
+            <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button onclick="enviarMensaje()">
               Enviar Mensaje<i class="fa-regular fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
           </div>
           <!--MAPA-->
           <div class="col">
-            <img src="./img/contacto/mapa.png" alt="">
+            <img src="./img/contacto/mapa.png" alt="Ubicación">
             <div class="info">
               <ul>
                 <li>
                   <i class="fa-solid fa-location-dot"></i>
-                  Tuxtla Gutierrez, Chiapas,20980
+                  Tuxtla Gutiérrez, Chiapas, México
                 </li>
                 <li>
                   <i class="fa-solid fa-mobile"></i>
-                  Mi numero telefonico: 9641173446
+                  (+52) 964 117 3446
                 </li>
                 <li>
                   <i class="fa-regular fa-envelope"></i>
-                  Email: JoseAntonioPintoAguilar@gmail.com
-                  
+                  JoseAntonioPintoAguilar@gmail.com
                 </li>
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
     <!--Footer-->
-
     <footer>
       <a href="#inicio" class="arriba">
         <i class="fa-solid fa-angles-up"></i>
@@ -431,8 +459,8 @@
         <a href="https://x.com/VixelTorn?t=juc2I8E3DvIEB1c-SQQt9Q&s=08"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://github.com/JosephAntony37900"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-pinto-aguilar-b884b92a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-solid fa-rss"></i></a>
       </div>
+      <p style="margin-top: 20px; color: #999;">© 2025 José Antonio Pinto Aguilar. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
